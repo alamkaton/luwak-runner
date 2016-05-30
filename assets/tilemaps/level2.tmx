@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="20" tilewidth="40" tileheight="40" nextobjectid="78">
+ <tileset firstgid="1" name="terrains" tilewidth="40" tileheight="40" tilecount="16" columns="8">
+  <image source="../images/terrains.png" width="320" height="80"/>
+ </tileset>
+ <layer name="backgroundLayer" width="40" height="20">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,
+1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,11,1,1,1,1,
+1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,
+1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,
+1,1,1,1,1,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,
+1,1,1,1,1,11,11,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,
+1,1,1,1,1,1,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,11,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer name="blockedLayer" width="40" height="20">
+  <data encoding="csv">
+5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,12,12,12,12,12,12,12,5,5,5,5,5,5,5,5,5,5,
+5,12,12,12,12,12,12,12,12,12,12,12,12,12,12,5,5,5,5,5,5,5,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,5,
+5,12,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,
+5,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,5,
+5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,5,5,
+5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,5,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,12,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,5,
+5,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,13,0,0,0,0,0,12,5,
+5,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,12,
+5,12,12,12,12,12,12,12,12,12,12,12,12,12,12,5,5,5,5,5,5,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,
+5,5,5,5,5,12,12,12,12,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+</data>
+ </layer>
+ <objectgroup name="objectsLayer">
+  <object id="2" gid="16" x="198.667" y="198.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="browndoor"/>
+    <property name="type" value="door"/>
+   </properties>
+  </object>
+  <object id="12" gid="16" x="1400" y="197.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="browndoor"/>
+    <property name="type" value="door"/>
+   </properties>
+  </object>
+  <object id="13" gid="6" x="1293.33" y="172" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="14" gid="6" x="1209.33" y="294.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="15" gid="6" x="1008" y="382.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="16" gid="6" x="636" y="313.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="17" gid="6" x="418.667" y="349.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="18" gid="6" x="313.333" y="588" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="19" gid="6" x="560" y="601.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="20" gid="6" x="337.333" y="221.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="21" gid="6" x="808" y="581.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="22" gid="6" x="1074.67" y="545.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="23" gid="6" x="1338.67" y="568" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="24" gid="6" x="1197.33" y="404" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="25" gid="6" x="824" y="250.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="26" gid="6" x="150.667" y="333.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="27" gid="6" x="165.333" y="510.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="28" gid="6" x="509.333" y="278.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="29" gid="6" x="728" y="421.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="jawa"/>
+    <property name="type" value="item1"/>
+   </properties>
+  </object>
+  <object id="30" gid="7" x="1137.33" y="197.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="31" gid="7" x="1282.67" y="384" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="32" gid="7" x="1437.33" y="425.333" width="40" height="40"/>
+  <object id="33" gid="7" x="1441.33" y="589.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="34" gid="7" x="1190.67" y="609.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="35" gid="7" x="1098.67" y="342.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="36" gid="7" x="890.667" y="402.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="37" gid="7" x="702.667" y="250.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="38" gid="7" x="612" y="413.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="39" gid="7" x="288" y="366.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="40" gid="7" x="413.333" y="578.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="41" gid="7" x="686.667" y="593.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="42" gid="7" x="976" y="570.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="43" gid="7" x="641.333" y="674.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="44" gid="7" x="265.333" y="657.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="45" gid="7" x="586.667" y="180" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="46" gid="7" x="914.667" y="172" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="47" gid="7" x="1438.67" y="429.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="wamena"/>
+    <property name="type" value="item2"/>
+   </properties>
+  </object>
+  <object id="48" gid="15" x="1266.67" y="237.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="49" gid="15" x="1434.67" y="344" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="50" gid="15" x="925.333" y="274.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="51" gid="15" x="752" y="340" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="52" gid="15" x="709.333" y="176" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="tyoe" value="item3"/>
+   </properties>
+  </object>
+  <object id="53" gid="15" x="410.667" y="270.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="54" gid="15" x="354.667" y="425.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="55" gid="15" x="481.333" y="568" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="56" gid="15" x="497.333" y="672" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="57" gid="15" x="634.667" y="544" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="58" gid="15" x="765.333" y="662.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="59" gid="15" x="949.333" y="650.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="60" gid="15" x="1092" y="629.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="61" gid="15" x="1254.67" y="538.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="62" gid="15" x="242.667" y="546.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="63" gid="15" x="124" y="252" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="64" gid="15" x="273.333" y="288" width="40" height="40">
+   <properties>
+    <property name="sprite" value="toraja"/>
+    <property name="type" value="item3"/>
+   </properties>
+  </object>
+  <object id="65" gid="4" x="1310.67" y="301.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="66" gid="4" x="1025.33" y="209.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="67" gid="4" x="1061.33" y="441.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="68" gid="4" x="876" y="532" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="69" gid="4" x="434.667" y="432" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="70" gid="4" x="142.667" y="428" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="72" gid="4" x="357.333" y="530.667" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="73" gid="4" x="552" y="329.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="75" gid="4" x="1377.33" y="640" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="76" gid="4" x="1430.67" y="513.333" width="40" height="40">
+   <properties>
+    <property name="sprite" value="gula"/>
+    <property name="type" value="item"/>
+   </properties>
+  </object>
+  <object id="77" gid="14" x="1400" y="238" width="40" height="40">
+   <properties>
+    <property name="sprite" value="none"/>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
